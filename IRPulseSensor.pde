@@ -34,8 +34,6 @@
     println(inString);
     int currentHeartrate = int(inString);
 
-    if (currentHeartrate > 0) {
-
     // draw the Heartrate BPM Graph.
     float heartrateHeight = map(currentHeartrate, 0, 1023, 0, height);
     stroke(0,255,0);
@@ -48,7 +46,7 @@
     } else {
     // increment the horizontal position:
     xPos++;
-    }
+   
     }
     }
     }
